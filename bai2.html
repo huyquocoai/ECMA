@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bai2</title>
+    <script src="bai2.js"></script>
+    <style>
+      .user_item {
+        color: green;
+        text-decoration: underline;
+        cursor: pointer;
+      }
+    </style>
+  </head>
+  <body>
+    <form id="userForm">
+      <label for="userId">ID:</label>
+      <input type="text" id="userId" name="userId" required />
+      <br />
+      <label for="userName">Name:</label>
+      <input type="text" id="userName" name="userName" required />
+      <br />
+      <label for="userGender">Gender:</label>
+      <select id="userGender" name="userGender" required>
+        <option value="1">Female</option>
+        <option value="2">Male</option>
+      </select>
+      <br />
+      <button type="button" onclick="addUser()">Add</button>
+    </form>
+
+    <ul id="userList"></ul>
+  </body>
+</html>
